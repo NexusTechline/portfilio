@@ -16,11 +16,7 @@ interface ContactFormEmailProps {
   message: string;
 }
 
-export const ContactFormEmail = ({
-  name,
-  email,
-  message,
-}: ContactFormEmailProps) => (
+export const ContactFormEmail = ({ name, email, message }: ContactFormEmailProps) => (
   <Html>
     <Head />
     <Preview>New message from your portfolio website</Preview>
@@ -28,8 +24,8 @@ export const ContactFormEmail = ({
       <Container style={container}>
         <Heading style={h1}>New Contact Form Submission</Heading>
         <Text style={text}>
-          You've received a new message from your portfolio website's contact
-          form.
+          You&apos;ve received a new message from your portfolio website&apos;s
+          contact form.
         </Text>
         <Section style={section}>
           <Text style={sectionHeader}>Name:</Text>
@@ -45,7 +41,7 @@ export const ContactFormEmail = ({
         </Section>
         <Hr style={hr} />
         <Text style={footer}>
-          This email was sent from your portfolio website's contact form.
+          This email was sent from your portfolio website&apos;s contact form.
         </Text>
       </Container>
     </Body>
